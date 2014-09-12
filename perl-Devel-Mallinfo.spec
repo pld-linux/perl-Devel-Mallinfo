@@ -64,7 +64,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc README
 %{perl_vendorarch}/%{pdir}/%{pnam}.pm
 %dir %{perl_vendorarch}/auto/%{pdir}/%{pnam}
-%{perl_vendorarch}/auto/%{pdir}/%{pnam}/%{pnam}.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/%{pdir}/%{pnam}/%{pnam}.so
 %{_mandir}/man3/*
 %dir %{_examplesdir}/%{name}-%{version}/

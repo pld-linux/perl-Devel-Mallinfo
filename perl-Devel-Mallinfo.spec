@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Devel
 %define		pnam	Mallinfo
+%include	/usr/lib/rpm/macros.perl
 Summary:	Devel::Mallinfo - mallinfo() memory statistics and more
 Summary(pl.UTF-8):	Devel::Mallinfo - statystyki pamięci mallinfo()
 Name:		perl-%{pdir}-%{pnam}
@@ -15,7 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	f3122dd6941edff1c469d3777b49edb5
-URL:		http://search.cpan.org/dist/%{pdir}-%{pnam}/
+URL:		http://search.cpan.org/dist/Devel-Mallinfo/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -29,11 +29,11 @@ information are provided too, when available.
 
 %description -l pl.UTF-8
 Devel::Mallinfo jest interfejsem do funkcji mallinfo w bibliotece C,
-służącej do tworzenia statystyk zajętości pamięci alokowane
-przez malloc. Przeznaczony jest dla programistów, do zobrazowania ile
+służącej do tworzenia statystyk zajętości pamięci alokowane przez
+malloc. Przeznaczony jest dla programistów, do zobrazowania ile
 pamięci zajmuje program i biblioteki. Dostarczany jest również
-interfejs do różnych informacji o zajętości pamięci
-specyficznych dla biblioteki GNU C.
+interfejs do różnych informacji o zajętości pamięci specyficznych dla
+biblioteki GNU C.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}

@@ -8,13 +8,13 @@
 Summary:	Devel::Mallinfo - mallinfo() memory statistics and more
 Summary(pl.UTF-8):	Devel::Mallinfo - statystyki pamięci mallinfo()
 Name:		perl-%{pdir}-%{pnam}
-Version:	13
+Version:	14
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	f3122dd6941edff1c469d3777b49edb5
+# Source0-md5:	eaf6d39b94ba1637ba38b7db74013d7d
 URL:		http://search.cpan.org/dist/Devel-Mallinfo/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13

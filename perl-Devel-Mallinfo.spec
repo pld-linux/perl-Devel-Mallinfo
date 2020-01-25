@@ -4,7 +4,6 @@
 
 %define		pdir	Devel
 %define		pnam	Mallinfo
-%include	/usr/lib/rpm/macros.perl
 Summary:	Devel::Mallinfo - mallinfo() memory statistics and more
 Summary(pl.UTF-8):	Devel::Mallinfo - statystyki pamięci mallinfo()
 Name:		perl-%{pdir}-%{pnam}
